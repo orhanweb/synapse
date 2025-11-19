@@ -176,7 +176,7 @@ export function MentionTextarea({ value, onChange, placeholder, className = '' }
         onChange={handleChange}
         onKeyDown={handleKeyDown}
         placeholder={placeholder}
-        className={`w-full h-full p-4 rounded-md border border-input bg-background text-foreground resize-none focus:outline-none font-mono text-sm ${className}`}
+        className={`w-full h-full p-4 bg-background text-foreground resize-none focus:outline-none font-mono text-sm ${className}`}
       />
 
       {/* Autocomplete Dropdown */}
