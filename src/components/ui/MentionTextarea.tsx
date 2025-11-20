@@ -10,6 +10,10 @@ interface MentionTextareaProps {
   className?: string;
 }
 
+/**
+ * A textarea component that supports @mentions with a dropdown.
+ * Styling is minimal (no border/radius) to blend seamlessly with parent containers.
+ */
 export function MentionTextarea({ value, onChange, placeholder, className = '' }: MentionTextareaProps) {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [showDropdown, setShowDropdown] = useState(false);
